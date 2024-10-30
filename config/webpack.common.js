@@ -1,17 +1,17 @@
-const path = require("path");
-const webpack = require("webpack");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { entryPath } = require("./path");
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { entryPath } = require('./path');
 
 module.exports = {
-  entry: path.join(entryPath, "index.ts"),
+  entry: path.join(entryPath, 'index.ts'),
   output: {
-    filename: "bundle.js",
+    filename: 'bundle.js',
   },
 
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
-    extensions: [".ts", ".tsx", ".js", ".json"],
+    extensions: ['.ts', '.tsx', '.js', '.json'],
   },
 
   module: {
@@ -19,16 +19,16 @@ module.exports = {
       // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
       {
         test: /\.tsx?$/,
-        loader: "awesome-typescript-loader",
+        loader: 'ts-loader',
         exclude: /node_modules/,
       },
-      { test: /\.js?$/, loader: "babel-loader", exclude: /node_modules/ },
+      { test: /\.js?$/, loader: 'babel-loader', exclude: /node_modules/ },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(entryPath, "index.html"),
-      filename: "index.html",
+      template: path.join(entryPath, 'index.html'),
+      filename: 'index.html',
     }),
   ],
 };
