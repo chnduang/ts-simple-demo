@@ -52,10 +52,27 @@ const selfFlatten3 = (arr: any[]): any[] => {
   return tempArr;
 };
 
+//  reduce
+const selfFlatten4 = (arr: any[]) => {
+  if (!arr?.length) {
+    return;
+  }
+  const reduceArr = arr.reduce((preVal, curVal) => {
+    console.log('curVal', preVal, curVal);
+    if (!Array.isArray(curVal)) {
+      return preVal.concat(curVal);
+    }
+    const currentVal = selfFlatten4(curVal);
+    return preVal.concat(currentVal);
+  }, []);
+  return reduceArr;
+};
+
 //output
 // const flat1 = selfFlatten1([1, [2, [6, 4], 8], 4, [343, 32]]);
 // const flat3 = selfFlatten3([1, [2, [6, 4], 8], 4, [343, 32]]);
-// console.log('flatA-', flat1, flat3);
+const flat4 = selfFlatten4([1, [2, [6, 4], 8], 4, [343, 32]]);
+console.log('flatA-', flat4);
 
 // 导出
-export { selfFlatten1, selfFlatten2, selfFlatten3 };
+export { selfFlatten1, selfFlatten2, selfFlatten3, selfFlatten4 };

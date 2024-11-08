@@ -20,8 +20,8 @@ const selfSort = (arr: any[]) => {
   return resSortArr;
 };
 
-const arr = ['1-test', 'z-1-x', '10-dd-cc', '2-es', '12-qaaa', 'qwe', 'ere2'];
+// const arr = ['1-test', 'z-1-x', '10-dd-cc', '2-es', '12-qaaa', 'qwe', 'ere2'];
 
-selfSort(arr);
+// selfSort(arr);
 
 export { selfSort };

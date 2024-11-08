@@ -1,0 +1,3 @@
+const getParseInt = () => {};
+
+export { getParseInt };
