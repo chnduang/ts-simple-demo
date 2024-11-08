@@ -1,4 +1,4 @@
 import { createLinkNode } from './linknode';
-import { stackQueen } from './stack/queen';
+import { stackQueen } from './queen/stack';
 
 export { createLinkNode, stackQueen };

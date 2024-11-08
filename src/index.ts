@@ -1,1 +1,2 @@
-import "./algorithm";
+import './algorithm';
+import './mdn';

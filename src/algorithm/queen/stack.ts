@@ -36,9 +36,9 @@ export class stackQueen {
   }
 }
 
-const queen = new stackQueen();
-queen.add(10);
-queen.add(11);
-queen.add(112);
-queen.add(13);
-queen.delete();
+// const queen = new stackQueen();
+// queen.add(10);
+// queen.add(11);
+// queen.add(112);
+// queen.add(13);
+// queen.delete();

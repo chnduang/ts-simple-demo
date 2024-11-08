@@ -14,7 +14,7 @@ interface ILinkNode {
 export const createLinkNode = (arr: number[]): ILinkNode => {
   const length = arr.length;
   if (!length) {
-    throw new Error("");
+    throw new Error('');
   }
   let currentNode: ILinkNode = {
     value: arr[length - 1],
@@ -31,4 +31,4 @@ export const createLinkNode = (arr: number[]): ILinkNode => {
   return currentNode;
 };
 
-console.log("test222", createLinkNode([11, 3, 4, 52, 1]));
+// console.log("test222", createLinkNode([11, 3, 4, 52, 1]));
