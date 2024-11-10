@@ -1,0 +1,3 @@
+function proxySimpleImpl() {}
+
+export { proxySimpleImpl };

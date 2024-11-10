@@ -71,8 +71,8 @@ const selfFlatten4 = (arr: any[]) => {
 //output
 // const flat1 = selfFlatten1([1, [2, [6, 4], 8], 4, [343, 32]]);
 // const flat3 = selfFlatten3([1, [2, [6, 4], 8], 4, [343, 32]]);
-const flat4 = selfFlatten4([1, [2, [6, 4], 8], 4, [343, 32]]);
-console.log('flatA-', flat4);
+// const flat4 = selfFlatten4([1, [2, [6, 4], 8], 4, [343, 32]]);
+// console.log('flatA-', flat4);
 
 // 导出
 export { selfFlatten1, selfFlatten2, selfFlatten3, selfFlatten4 };

@@ -1,1 +1,3 @@
 const testMap = () => {};
+
+export { testMap };
