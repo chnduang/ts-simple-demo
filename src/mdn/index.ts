@@ -1,35 +1,25 @@
 import * as codeEcho from './code-echo';
-import { outPut1 } from './prototype';
-import { testArguments } from './arguments';
-import * as selfFlatten from './arrFlatten';
-import * as getType from './typeof';
-import * as selfNew from './new';
-import * as DomTree from './dom';
-import * as selfSort from './sort';
-import * as selfInstanceOf from './instanceof';
-import * as selfBind from './bind';
-import * as selfApply from './apply-call';
-import * as EventBus from './event-bus';
-import * as LRUCache from './lru-cache';
-import * as deepClone from './deep-clone';
-import * as getParseInt from './parseInt';
-import * as getTreeList from './tree';
+import * as selfAjax from './ajax';
+import * as selfArray from './array';
+import * as selfEvent from './dom-events';
+import * as selfFunc from './func';
+import * as selfFuncImp from './func-implement';
+import * as selfMapSet from './map-set';
+import * as selfOperator from './operator';
+import * as selfPromise from './promise';
+import * as selfProxy from './proxy';
+import * as selfTraverse from './traverse';
 
 export {
   codeEcho,
-  outPut1,
-  testArguments,
-  selfFlatten,
-  getType,
-  selfNew,
-  DomTree,
-  selfSort,
-  selfInstanceOf,
-  selfBind,
-  selfApply,
-  EventBus,
-  LRUCache,
-  deepClone,
-  getParseInt,
-  getTreeList,
+  selfFunc,
+  selfFuncImp,
+  selfArray,
+  selfOperator,
+  selfEvent,
+  selfTraverse,
+  selfPromise,
+  selfProxy,
+  selfAjax,
+  selfMapSet,
 };
