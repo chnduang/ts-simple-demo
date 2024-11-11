@@ -5,6 +5,7 @@ import * as selfEvent from './dom-events';
 import * as selfFunc from './func';
 import * as selfFuncImp from './func-implement';
 import * as selfMapSet from './map-set';
+import * as selfObject from './object';
 import * as selfOperator from './operator';
 import * as selfPromise from './promise';
 import * as selfProxy from './proxy';
@@ -22,4 +23,5 @@ export {
   selfProxy,
   selfAjax,
   selfMapSet,
+  selfObject,
 };

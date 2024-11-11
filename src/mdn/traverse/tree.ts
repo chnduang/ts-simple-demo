@@ -46,52 +46,20 @@ const getTreeList = (arr: IArrayList[]): ITreeNode | null => {
   return root;
 };
 
-const arrs = [
-  { id: 3, name: 'c', parentId: 2 },
-  { id: 4, name: 'd', parentId: 3 },
-  { id: 5, name: 'e', parentId: 3 },
-  { id: 2, name: 'b', parentId: 6 },
-  { id: 6, name: 'f', parentId: 1 },
-  { id: 1, name: 'a', parentId: 0 },
-];
+// const arrs = [
+//   { id: 3, name: 'c', parentId: 2 },
+//   { id: 4, name: 'd', parentId: 3 },
+//   { id: 5, name: 'e', parentId: 3 },
+//   { id: 2, name: 'b', parentId: 6 },
+//   { id: 6, name: 'f', parentId: 1 },
+//   { id: 1, name: 'a', parentId: 0 },
+//   { id: 10, name: '1c', parentId: 2 },
+// ];
 
-// console.log('tree----', getTreeList(arrs));
+// console.time('tree1');
 
-const trees = {
-  id: 1,
-  name: 'a',
-  parentId: 0,
-  children: [
-    {
-      id: 6,
-      name: 'f',
-      parentId: 1,
-      children: [
-        {
-          id: 2,
-          name: 'b',
-          parentId: 6,
-          children: [
-            {
-              id: 3,
-              name: 'c',
-              parentId: 2,
-              children: [
-                { id: 4, name: 'd', parentId: 3 },
-                { id: 5, name: 'e', parentId: 3 },
-              ],
-            },
-          ],
-        },
-      ],
-    },
-  ],
-};
+// console.log('tree1----', getTreeList(arrs));
 
-// 树转数组
-// 广度优先遍历
-const getTreeToList = (tree: ITreeNode | null): IArrayList[] => {
-  return [];
-};
+// console.timeEnd('tree1');
 
-export { getTreeList, getTreeToList };
+export { getTreeList };
